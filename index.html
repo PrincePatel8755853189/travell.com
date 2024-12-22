@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header/Nav -->
+    <header>
+        <nav>
+            <!-- Desktop Menu -->
+            <ul class="desktop">
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Mobile Menu -->
+            <ul class="mobile">
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+           
+        </div>                                                                                                      
+       
+        <a href="#" class="register-btn">Register Now</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="typing">      
+            </div>
+            
+            <div id="text-container"></div>
+        
+         <script>
+            const text = "Wellcome to Raju Travels. Explore the world with us!";
+            let index = 0;
+        
+            function typeLetter() {
+                if (index < text.length) {
+                    document.getElementById("text-container").innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeLetter, 100); // Adjust the speed here (100ms per letter)
+                }
+            }
+        
+            typeLetter();
+         </script>
+          <br>
+            <a href="#" class="cta-btn">Register</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://media.istockphoto.com/id/1248415323/photo/3d-illustration-of-happy-smiling-businessman-in-suit-with-laptop-sitting-in-armchair-cartoon.jpg?s=612x612&w=0&k=20&c=pQQez7m8lNwrlZsJNdCPVixdfCZfA8vQl6Zgmu6D_Vo=" alt="Hero Illustration">
+        </div>
+    </section>
+
+
+
+    
+    <!-- Slider Section -->
+<section class="slider_section position-relative">
+    <div id="customCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img_container">
+                    <div class="img-box">
+                        <img src="/travell.com/image/pngwing.com.png" alt="Maruti Ertiga">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img_container">
+                    <div class="img-box">
+                        <img src="/travell.com/image/favpng_suzuki-ertiga-maruti-suzuki-car.png" class="d-block w-100" alt="Image 13">
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="carousel_btn_box">
+            <a class="carousel-control-prev" href="#customCarousel1" role="button" data-bs-slide="prev">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#customCarousel1" role="button" data-bs-slide="next">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+   
+</section>
+<!-- End Slider Section -->
+
+<!-- Bootstrap JS -->
+ <!-- This is for the move the slider  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<div id="customCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+
+
+
+
+
+
+
+ 
+
+<!-- JavaScript to toggle mobile menu -->
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('nav ul.mobile');
+
+    // Toggle mobile menu visibility when hamburger is clicked
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
+
+
+
+<!-- feature area for the car  -->
+
+<section class="Feature_section">
+    <div class="Feature_section_content">
+        <div class="typing">  
+        </div>
+            <div id="text-container"></div>
+            <h4>Here are Some Reason Why you Choose us! </h4><br>
+            <h5>1. We Provide Air-Conditioned Cars<br>
+                2. Premium Car Interiors for Your Comfort<br>
+                3. Spacious 7-Seater Design<br>
+                4. Your Safety is Our Priority<br>
+                5. Over 5 Years of Driving Experience</h5>   
+     </div>
+     <div class="dashboard_of_car">
+        <img src="/travell.com/image/ertigaertigadashboard.jpeg" alt="Hero Illustration">
+    </div>
+</section>
+
+
+<!-- feature area for the car  -->
+
+<section class="Feature_section">
+    <div class="Feature_section_content">
+        <div class="typing">  
+        </div>
+            <div id="text-container"></div>
+            <h4>Here are Some Reason Why you Choose us! </h4><br>
+            <h5>1. We Provide Air-Conditioned Cars<br>
+                2. Premium Car Interiors for Your Comfort<br>
+                3. Spacious 7-Seater Design<br>
+                4. Your Safety is Our Priority<br>
+                5. Over 5 Years of Driving Experience</h5>   
+     </div>
+     <div class="Feature_section_content">
+        <div class="typing">  
+        </div>
+            <div id="text-container"></div>
+            <h4>Here are Some Reason Why you Choose us! </h4><br>
+            <h5>1. We Provide Air-Conditioned Cars<br>
+                2. Premium Car Interiors for Your Comfort<br>
+                3. Spacious 7-Seater Design<br>
+                4. Your Safety is Our Priority<br>
+                5. Over 5 Years of Driving Experience</h5>   
+     </div>
+     <div class="Feature_section_content">
+        <div class="typing">  
+        </div>
+            <div id="text-container"></div>
+            <h4>Here are Some Reason Why you Choose us! </h4><br>
+            <h5>1. We Provide Air-Conditioned Cars<br>
+                2. Premium Car Interiors for Your Comfort<br>
+                3. Spacious 7-Seater Design<br>
+                4. Your Safety is Our Priority<br>
+                5. Over 5 Years of Driving Experience</h5>   
+     </div>
+    
+</section>
+
+
+
+
+
+</body>
+</html>
+
+    
+
+    
+  
